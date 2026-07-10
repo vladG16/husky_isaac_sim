@@ -1,0 +1,18 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Isaac Sim / USD temp
+*.usd.tmp
+.thumbs/
+
+# Editor
+.vscode/
+*.swp
