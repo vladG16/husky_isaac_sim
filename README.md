@@ -161,3 +161,5 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0}, angular: {z:
 - Wheel radius: `0.1651` m
 - Wheel distance (track width): `0.5708` m
 - Wheel joints: `front_left_wheel_joint`, `front_right_wheel_joint`, `rear_left_wheel_joint`, `rear_right_wheel_joint`
+
+- File name: husky_isaaclab.usd (path:home,lab,downloads,husky)
