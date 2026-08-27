@@ -127,17 +127,4 @@ ros2 run husky_sim_nav waypoint_nav
 See `README.md` for the full pipeline documentation, node wiring, waypoint format, and troubleshooting.
  
 ---
- 
-## Summary of what comes from where
- 
-| Component | Source | In this repo? |
-|---|---|---|
-| Isaac Sim 5.1.0 | NVIDIA (install) | No — install separately |
-| ROS 2 Jazzy | ROS (install) | No — install separately |
-| Husky model | Clearpath `husky_description` | Geometry baked into `usd/configuration/` |
-| ZED X camera model | Stereolabs ZED extension | No — install the extension |
-| Room environment | Isaac Sim built-in assets | No — resolved by Isaac |
-| Scene + action graph | **This repo** | Yes — `usd/husky_isaaclab.usd` |
-| Waypoint navigator | **This repo** | Yes — `husky_sim_nav/` |
-| Waypoint paths | **This repo** | Yes — `waypoints/` |
-| Documentation / SOP | **This repo** | Yes — `README.md`, `SETUP.md` |
+
