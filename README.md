@@ -1,5 +1,7 @@
 # SOP — Driving the Husky in Isaac Sim 5.1 via ROS 2 (Jazzy)
 
+New here? Start with SETUP.md for prerequisites and installation, then come back here for how the pipeline works.
+
 Standard operating procedure for commanding the Husky's wheels in Isaac Sim from a ROS 2 `/cmd_vel` publisher, using an OmniGraph action graph (ROS2 Subscribe Twist → Differential Controller → Articulation Controller).
 
 Platform: Isaac Sim 5.1.0, ROS 2 Jazzy, Dell workstation (Ubuntu 24.04).
