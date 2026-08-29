@@ -85,8 +85,6 @@ Insert between the Differential Controller and the Articulation Controller:
   - input3 (→ rear_right)  = Get Array Index[1] (right)
 - **Make Array : Array output** → Articulation Controller : Velocity Command.
 
-> ⚠️ **This is the single easiest thing to get backwards, and it doesn't throw an error when wrong.** If you instead wire `[left, left, right, right]` against this jointNames order, you get a **front-axle-vs-rear-axle split** instead of a **left-vs-right split**. The wheels all still spin, no errors are raised, but a commanded pure rotation produces weak yaw plus unwanted sideways drift (front axle pushes one way, rear axle pushes the other). See the Troubleshooting table below — this cost significant debugging time and is worth double-checking against the Articulation Controller's *live* `velocityCommand` field (not just the Make Array's static values) any time wheel behavior looks physically wrong despite correct-looking wiring.
-
 ---
 
 # PART B — Localization: sim → `/odom`
