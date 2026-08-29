@@ -312,4 +312,4 @@ ros2 run rqt_image_view rqt_image_view   # select /zed/image
 | `README.md` | This document |
 | `SETUP.md` | Prerequisites and installation |
 
-> **USD path dependency:** the `.usd` may reference meshes (URDF, ZED model) by absolute local paths. On a fresh machine these must be re-resolved. Keep referenced assets alongside the USD or document their locations.
+
