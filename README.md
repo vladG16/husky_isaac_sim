@@ -47,7 +47,7 @@ Stiffness 0 + nonzero damping = pure velocity control (what a wheel needs). Damp
 6. **Articulation Controller** — drives the actual joints.
 
 ### A3. Wiring
-```
+
 ![Husky pipeline diagram](docs/graph_screenshots/pipeline_diagram.png) 
 
 ### A4. Differential Controller parameters
