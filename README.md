@@ -48,7 +48,7 @@ Stiffness 0 + nonzero damping = pure velocity control (what a wheel needs). Damp
 
 ### A3. Wiring
 
-<img src="docs/graph_screenshots/pipeline_diagram.png" width="700">
+<img src="pipeline_diagram.png" width="700">
 
 ### A4. Differential Controller parameters
 | Field | Value | Notes |
