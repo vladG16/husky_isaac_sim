@@ -48,23 +48,7 @@ Stiffness 0 + nonzero damping = pure velocity control (what a wheel needs). Damp
 
 ### A3. Wiring
 ```
-On Playback Tick : Tick          -> ROS2 Subscribe Twist : Exec In
-On Playback Tick : Delta Seconds -> Differential Controller : Dt   (see note*)
-ROS2 Context     : Context       -> ROS2 Subscribe Twist : Context
-
-ROS2 Subscribe Twist : Linear Velocity  -> Break 3-Vector (linear)  : Vector
-ROS2 Subscribe Twist : Angular Velocity -> Break 3-Vector (angular) : Vector
-ROS2 Subscribe Twist : Exec Out         -> Differential Controller  : Exec In
-
-Break 3-Vector (linear)  : X -> Differential Controller : Desired Linear Velocity
-Break 3-Vector (angular) : Z -> Differential Controller : Desired Angular Velocity
-
-Differential Controller : Velocity Command -> [Array mapping, see A6] -> Articulation Controller : Velocity Command
-Differential Controller : Exec Out          -> Articulation Controller : Exec In
-```
-*Note on Dt: if the `deltaSeconds` output reads 0 and you get an "Invalid deltaTime 0.000000" error, disconnect the Dt wire and type a fixed value `0.016` into the Dt field instead. A constant frame time is fine for velocity control.
-
-Controller must tick from **On Playback Tick** every frame, not from Subscribe Twist's Exec Out — ticking only on message arrival freezes the last output between messages, causing phantom motion.
+<img src="docs/graph_screenshots/pipeline_diagram.png" width="700"> 
 
 ### A4. Differential Controller parameters
 | Field | Value | Notes |
